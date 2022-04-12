@@ -1,0 +1,38 @@
+<h1>Pais: {{array.name}}</h1>
+<hr>
+<div class="animate__animated animate__fadeIn">
+<div class="row">
+  <div class="col">
+    <h3>Bandera</h3>
+    <div class="card" style="width: 18rem;">
+      <img [src]="array.flags.svg" class="card-img-top" style="padding:2px 2px 2px 2px;">
+    </div>
+  </div>
+  <div class="col-6">
+    <h3>Informacion</h3>
+    <div class="card">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Poblacion: {{array.population}}</li>
+        <li class="list-group-item">Codigo numerico: {{array.numericCode}}</li>
+        <li class="list-group-item">Codigo alpha: {{array.alpha2Code}}</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <h3>Traducciones</h3>
+</div>
+<div class="col">
+  <span class="badge bg-primary">{{translation.br}}</span>
+  <span class="badge bg-primary">{{translation.de}}</span>
+  <span class="badge bg-primary">{{translation.es}}</span>
+  <span class="badge bg-primary">{{translation.fa}}</span>
+  <span class="badge bg-primary">{{translation.fr}}</span>
+  <span class="badge bg-primary">{{translation.hr}}</span>
+  <span class="badge bg-primary">{{translation.hu}}</span>
+  <span class="badge bg-primary">{{translation.it}}</span>
+  <span class="badge bg-primary">{{translation.ja}}</span>
+  <span class="badge bg-primary">{{translation.nl}}</span>
+  <span class="badge bg-primary">{{translation.pt}}</span>
+</div>
+</div>

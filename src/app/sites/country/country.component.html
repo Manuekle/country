@@ -1,0 +1,38 @@
+<h1>Buscar por pais</h1>
+<hr>
+<div class="mb-3">
+  <input type="text" class="form-control" id='name' (keyup.enter)="searchCountry($event)" placeholder="Buscar">
+</div>
+<hr>
+<div class="animate__animated animate__fadeIn" *ngIf="array[0].length != 0">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Bandera</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Poblacion</th>
+        <th scope="col">Accion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>
+          <img [src]="array[0].flags.svg" style="width:40px" />
+        </td>
+        <td>{{array[0].capital}}-{{array[0].name}}</td>
+        <td>{{array[0].population}}</td>
+        <td>
+          <a [routerLink]="['/country', array[0].alpha2Code]">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+              <path
+                d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z" />
+            </svg>
+          </a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
