@@ -16,11 +16,10 @@ export class CapitalComponent {
     this.name = event.target.value;
       Axios()
         .get("capital/" + this.name)
-        .then(respuesta => {
-          console.log(respuesta.data);
+        .then(respuesta => {          
           if(respuesta.statusText == 'OK'){
             this.array = respuesta.data;
-          }
+          };    
         })
         .catch(() => {
           Swal.fire({
@@ -33,7 +32,9 @@ export class CapitalComponent {
             // confirmButtonColor: "#238276",
             backdrop: "rgba(0,0,0,0)",
             background: "#eeeeee",
-          });  
+          });
+          this.array[0] = [];
+          console.log(this.array);          
         });
   }
 

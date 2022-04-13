@@ -36,6 +36,8 @@ export class CountryComponent {
         backdrop: "rgba(0,0,0,0)",
         background: "#eeeeee",
         });        
+        this.array[0] = [];
+        console.log(this.array);  
       });
   }
 
