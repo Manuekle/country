@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core';
-import { Country } from '../../interfaces/country.interface';
-import Axios from "./../../../Axios";
+import { Component } from '@angular/core';
+import { Country } from '../../../interfaces/country.interface';
+import Axios from "./../../../../Axios";
 
 @Component({
   selector: 'app-region',
@@ -8,6 +8,7 @@ import Axios from "./../../../Axios";
   styleUrls: ['./region.component.css']
 })
 export class RegionComponent {
+
   regions: string[] = ['africa', 'americas', 'asia', 'europe', 'oceania'];
   
   activeRegion: string = '';
@@ -35,4 +36,5 @@ export class RegionComponent {
         this.countries = respuesta.data;
       });
   }
+
 }

@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
-import { Country } from '../../interfaces/country.interface';
-
-import { Injectable } from '@angular/core';
-import Axios from "./../../../Axios";
-
+import { Country } from '../../../interfaces/country.interface';
+import Axios from "./../../../../Axios";
 import Swal from 'sweetalert2'
 
 @Component({
   selector: 'app-country',
-  templateUrl: './country.component.html'
+  templateUrl: './country.component.html',
+  styleUrls: ['./country.component.css']
 })
 export class CountryComponent {
-
-  //name: string = '';
+  
   array:any = [];
   count:any = [];
   name:string = '';

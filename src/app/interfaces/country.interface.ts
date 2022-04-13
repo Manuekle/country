@@ -1,4 +1,3 @@
-import 'animate.css';
 export interface Country {
 name: string;
 topLevelDomain: string[];

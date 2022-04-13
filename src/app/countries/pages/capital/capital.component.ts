@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import Axios from "./../../../Axios";
+import { Component } from '@angular/core';
+import Axios from "./../../../../Axios";
 import Swal from 'sweetalert2'
 
 @Component({
@@ -8,7 +8,7 @@ import Swal from 'sweetalert2'
   styleUrls: ['./capital.component.css']
 })
 export class CapitalComponent {
-
+  
   name:string = '';
   array:any = [];
 
@@ -35,6 +35,6 @@ export class CapitalComponent {
             background: "#eeeeee",
           });  
         });
-    }
+  }
 
 }
